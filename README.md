@@ -1,3 +1,2 @@
 # Akad
-# See in
-# https://dudkoserhei.github.io/Akad/
+# See in https://dudkoserhei.github.io/Akad/
