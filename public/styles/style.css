@@ -259,6 +259,9 @@ body {
 .footer__icon {
   margin-right: 10px;
 }
+.footer__icon:last-child {
+  margin-right: 0;
+}
 .footer__icon svg {
   width: 20px;
   height: 19px;
