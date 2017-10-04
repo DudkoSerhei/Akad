@@ -1,14 +1,14 @@
 /*banner*/
 .banner_home {
-  padding: 43px 80px 0;
   background: url('../images/img/home-background.jpg') no-repeat 0 0;
-  background-size: cover;
+  min-height: 850px;
 }
 .banner__title_home {
   position: relative;
   padding: 22px 36px;
   border: 10px solid #60606e;
   width: 557px;
+  margin: 0 auto;
 }
 .banner__title_home::after {
   content: "WE'RE";
