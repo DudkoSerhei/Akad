@@ -55,6 +55,11 @@ body {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.header__logo a {
+  color: #60606d;
+  text-decoration: none;
 }
 .haeder__menu {
   display: none;
