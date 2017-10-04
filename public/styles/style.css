@@ -32,9 +32,33 @@ body {
   box-shadow: none;
 }
 .second-title {
+  position: relative;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: bold;
+  z-index: 0;
+  margin: 0 auto 30px;
+}
+.second-title::after {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 21px;
+  top: 18px;
+  left: 0;
+  background-color: #a5edc7;
+  z-index: -1;
+}
+.third-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+.signature {
+  display: flex;
+  width: 55%;
+  margin: 0 auto 100px;
+  text-align: center;
 }
 .text {
   font-family: 'OpenSans', sans-serif;
@@ -130,7 +154,7 @@ body {
   justify-content: space-between;
 }
 .popup__heading {
-  width: 50%;
+  width: 45%;
 }
 .popup__second-title {
   color: #fff;
@@ -227,6 +251,7 @@ body {
   align-items: flex-end;
 }
 .footer__text {
+  font-family: 'OpenSans', sans-serif;
   text-transform: uppercase;
   color: #969696;
   margin-bottom: 30px;
