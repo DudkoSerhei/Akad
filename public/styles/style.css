@@ -96,24 +96,6 @@ body {
   margin: 0 auto;
 }
 
-/*icons*/
-.icon-infinity {
-  background: url('../images/icon/icon-infinity.svg') no-repeat 0 0;
-  background-size: cover;
-}
-.icon-arrows {
-  background: url('../images/icon/icon-arrows.svg') no-repeat 0 0;
-  background-size: cover;
-}
-.icon-cart {
-  background: url('../images/icon/icon-cart.svg') no-repeat 0 0;
-  background-size: 36px;
-}
-.icon-options {
-  background: url('../images/icon/icon-options.svg') no-repeat 0 0;
-  background-size: cover;
-}
-
 /*popup*/
 .popup {
   width: 100%;
