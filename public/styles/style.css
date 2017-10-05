@@ -236,6 +236,7 @@ body {
 .reply-form__input {
   width: 375px;
   border-right: 0;
+  color: #979797;
   border-top: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
@@ -244,19 +245,12 @@ body {
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
-  opacity: 0.6;
 }
-.reply-form__submit {
-  height: 50px;
+.reply-form__input::-webkit-input-placeholder {color:#ccc;}
+.reply-form__btn {
   width: 135px;
-  border: 0;
-  outline: 0;
-  box-shadow: none;
   background-color: #a5edc7;
   color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 /*footer*/
