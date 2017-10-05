@@ -57,6 +57,7 @@ body {
 .second-title {
   position: relative;
   text-transform: uppercase;
+  cursor: pointer;
   font-size: 30px;
   font-weight: bold;
   z-index: 0;
@@ -71,6 +72,10 @@ body {
   left: 0;
   background-color: #a5edc7;
   z-index: -1;
+  transition: all .5s ease-in-out;
+}
+.second-title:hover::after {
+  left: 75%;
 }
 .third-title {
   text-transform: uppercase;
@@ -233,6 +238,10 @@ body {
   padding: 18px 26px;
   background-color: #fff;
 }
+.reply-form:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
 .reply-form__title {
   font-size: 24px;
   font-weight: bold;
@@ -332,7 +341,11 @@ body {
   align-items: center;
 }
 .footer__icon {
+  cursor: pointer;
   margin-right: 10px;
+}
+.footer__icon:hover svg{
+  fill: #a5edc7;
 }
 .footer__icon:last-child {
   margin-right: 0;
