@@ -21,6 +21,21 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 59%;
+}
+.content__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px 0;
+}
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+}
 .btn {
   padding: 20px 0;
   width: 165px;
