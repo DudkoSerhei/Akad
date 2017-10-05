@@ -126,12 +126,28 @@ body {
 .header__nav li:last-child {
   margin-right: 0;
 }
-.nav__item {
+.header__nav .nav__item {
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
   color: #60606e;
+}
+.header__nav .nav__item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 50%;
+  height: 1px;
+  background-color: #60606e;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+.header__nav .nav__item:hover::after {
+  opacity: 1;
+  top: -15px;
 }
 
 /*banner*/
@@ -267,10 +283,26 @@ body {
 }
 .footer__nav .nav__item {
   position: relative;
+  text-decoration: none;
   margin-right: 40px;
   font-weight: 100;
   font-family: 'OpenSans', sans-serif;
   color: #989898;
+}
+.footer__nav .nav__item::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  background-color: #a5edc7;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+.footer__nav .nav__item:hover::after {
+  opacity: 1;
+  width: 50%;
 }
 .footer__nav .nav__item::before {
   content: "";
