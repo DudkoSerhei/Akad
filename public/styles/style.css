@@ -37,6 +37,8 @@ body {
   width: 22%;
 }
 .btn {
+  display: flex;
+  justify-content: center;
   padding: 20px 0;
   width: 165px;
   text-transform: uppercase;
@@ -134,12 +136,34 @@ body {
   height: 500px;
   width: 100%;
 }
+.banner_home {
+  background: url('../images/img/home-background.jpg') no-repeat 0 0;
+  background-size: cover;
+  height: 100vh;
+}
 .banner__title {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
   font-size: 48px;
   font-weight: bold;
+}
+.banner__title_home {
+  position: relative;
+  padding: 22px 36px;
+  border: 10px solid #60606e;
+  width: 557px;
+  margin: 0 auto;
+}
+.banner__title_home::after {
+  content: "WE'RE";
+  position: absolute;
+  top: -52px;
+  left: 218px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #a5edc7;
 }
 .banner__third-title {
   display: flex;
@@ -158,52 +182,52 @@ body {
   margin-left: 3px;
 }
 
-/*popup*/
-.popup {
+/*reply*/
+.reply {
   width: 100%;
   background-color: #a5edc7;
   padding: 50px 0;
 }
-.popup .main {
+.reply .main {
   display: flex;
   justify-content: space-between;
 }
-.popup__heading {
+.reply__heading {
   width: 45%;
 }
-.popup__second-title {
+.reply__second-title {
   color: #fff;
   line-height: 40px;
   margin-bottom: 30px;
 }
-.popup__btn {
+.reply__btn {
   color: #a5edc7;
   background-color: #fff;
 }
-.popup-form {
+.reply-form {
   position: relative;
   width: 555px;
   height: 230px;
   padding: 18px 26px;
   background-color: #fff;
 }
-.popup-form__title {
+.reply-form__title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.popup-form__text {
+.reply-form__text {
   font-size: 16px;
   color: #989898;
 }
-.popup-form__email {
+.reply-form__email {
   display: flex;
   position: absolute;
   bottom: 18px;
   left: 26px;
   height: 50px;
 }
-.popup-form__input {
+.reply-form__input {
   width: 375px;
   border-right: 0;
   border-top: 1px solid #e5e5e5;
@@ -216,7 +240,7 @@ body {
   text-transform: uppercase;
   opacity: 0.6;
 }
-.popup-form__submit {
+.reply-form__submit {
   height: 50px;
   width: 135px;
   border: 0;
