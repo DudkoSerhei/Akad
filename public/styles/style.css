@@ -39,14 +39,20 @@ body {
 .btn {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  align-items: center;
   width: 165px;
+  height: 50px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
   border: 0;
   outline: 0;
   box-shadow: none;
+  cursor: pointer;
+}
+.btn:hover, btn:active {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .second-title {
   position: relative;
@@ -294,6 +300,10 @@ body {
   text-transform: uppercase;
   color: #969696;
   margin-bottom: 30px;
+}
+.footer__icons {
+  display: flex;
+  align-items: center;
 }
 .footer__icon {
   margin-right: 10px;

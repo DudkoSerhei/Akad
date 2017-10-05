@@ -37,6 +37,12 @@
   font-weight: bold;
   margin-left: 20px;
 }
+.portfolio-choose__item:hover {
+  margin-left: 0;
+  background-color: #7beec7;
+  padding: 0 10px;
+  color: white;
+}
 .portfolio-choose__list .active {
   margin-left: 0;
   background-color: #7beec7;
@@ -52,13 +58,16 @@
 }
 .portfolio-choose__link {
   display: flex;
-}
-.portfolio-choose__img {
+  width: 260px;
   margin-bottom: 30px;
 }
-.portfolio-choose__link:nth-child(3n) .portfolio-choose__img {
+.portfolio-choose__link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+.portfolio-choose__link:nth-child(3n) {
   margin-bottom: 0;
 }
-.portfolio-choose__link:nth-child(-n+6) .portfolio-choose__img {
+.portfolio-choose__link:nth-child(-n+6) {
   margin-right: 30px;
 }

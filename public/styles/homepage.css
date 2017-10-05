@@ -63,14 +63,15 @@
 }
 .advantages-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 65%;
 }
 .advantages-list__item {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-bottom: 60px;
+  width: 47%;
+  margin-bottom: 50px;
 }
 .advantages-list__item:nth-child(3), .advantages-list__item:nth-child(4) {
   margin-bottom: 0;
@@ -91,6 +92,8 @@
   font-size: 14px;
   font-weight: 200;
   margin-bottom: 20px;
+  color: #a7a7a7;
+  cursor: pointer;
 }
 .advantages-list__unit:last-child {
   margin-bottom: 0;
