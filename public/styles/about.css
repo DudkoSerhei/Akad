@@ -2,7 +2,10 @@
 .about-description {
   display: flex;
   justify-content: space-between;
-  margin: 150px 0;
+  padding: 150px 0;
+}
+.about-description .second-title:hover::after {
+  left: 25%;
 }
 .about-description__item {
   width: 48%;
@@ -33,6 +36,16 @@
 }
 .profit-item {
   width: 29%;
+  padding: 5px;
+  transition: all .3s ease-in-out;
+}
+.profit-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+.profit-item:hover svg {
+  fill: #60606d;
+  stroke: #60606d;
 }
 .profit-item:nth-child(-n+3) {
   margin-bottom: 55px;
@@ -66,7 +79,7 @@
 
 /*staf*/
 .staff {
-  margin: 150px 0;
+  padding: 150px 0;
 }
 .staff__second-title {
   width: 282px;
@@ -79,13 +92,72 @@
 }
 .staff__link {
   display: flex;
-}
-.staff__img {
-  width: 100%;
+  width: 270px;
   height: 350px;
+  transition: all 1s ease-in-out;
 }
-.staff__img:nth-child(-n+4) {
-  margin-bottom: 35px;
+.staff__link:nth-child(-n+4) {
+  margin-bottom: 50px;
+}
+.staff__link:hover .staff-img {
+  display: none;
+}
+.staff__link:hover .staff-img__popup {
+  display: flex;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.staff__link:hover .staff-img__job, .staff__link:hover .staff-img__name {
+  opacity: 1;
+  transform: translateY(0);
+}
+.staff__link:hover .staff-img__info {
+  margin-top: 0;
+  transition: all .2s ease-in-out .2s;
+}
+.staff-img {
+  width: 100%;
+  height: 100%;
+}
+.staff-img__popup {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #FAFAFA;
+  padding: 20px;
+  transition: all .2s ease-in-out;
+}
+.staff-img__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  transition: all 3s ease-in-out;
+}
+.staff-img__name {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #60606e;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all .2s ease-in-out .2s;
+}
+.staff-img__job {
+  background-color: #7beec7;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all .2s ease-in-out .3s;
 }
 .staff__bar {
    display: flex;
@@ -94,6 +166,11 @@
    background-color: #efeff0;
    padding: 50px 30px;
    margin: 20px 0 150px;
+   transition: all .2s ease-in-out;
+}
+.staff__bar:hover, btn:active {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .staff__text {
   font-family: 'OpenSans', sans-serif;
@@ -165,6 +242,13 @@
   width: 165px;
   height: 100px;
   border: 1px solid #d9d9d9;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.staff-item__company:hover, btn:active {
+  filter: opacity(0.5);
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .staff-item__company:nth-child(-n+3) {
   margin-bottom: 30px;

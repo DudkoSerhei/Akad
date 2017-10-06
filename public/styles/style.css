@@ -49,6 +49,7 @@ body {
   outline: 0;
   box-shadow: none;
   cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 .btn:hover, btn:active {
   transform: scale(1.01);
@@ -190,15 +191,18 @@ body {
   font-size: 18px;
   font-weight: bold;
   padding: 10px 20px;
+  width: 65px;
   background-color: #a5edc7;
 }
 .banner__third-title {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  width: 110px;
   font-size: 14px;
   font-weight: bold;
-  margin-top: 20px;
+  margin: 20px auto 0;
+  cursor: pointer;
 }
 .banner__third-title_ligh {
   font-weight: 400;
@@ -237,6 +241,7 @@ body {
   height: 230px;
   padding: 18px 26px;
   background-color: #fff;
+  transition: all .2s ease-in-out;
 }
 .reply-form:hover {
   transform: scale(1.01);

@@ -36,6 +36,7 @@
   font-size: 14px;
   font-weight: bold;
   margin-left: 20px;
+  transition: all .3s ease-in-out;
 }
 .portfolio-choose__item:hover {
   margin-left: 0;
@@ -60,6 +61,7 @@
   display: flex;
   width: 260px;
   margin-bottom: 30px;
+  transition: all .2s ease-in-out;
 }
 .portfolio-choose__link:hover {
   transform: scale(1.05);

@@ -35,6 +35,10 @@
   left: 0;
   background-color: #a5edc7;
   z-index: -1;
+  transition: all .5s ease-in-out;
+}
+.banner-history__second-title:hover::after {
+  left: 38%;
 }
 .banner-history__text {
   display: flex;
