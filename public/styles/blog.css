@@ -8,10 +8,13 @@
   margin-bottom: 0;
 }
 .blog__photo {
-  min-width: 750px;
-  max-width: 750px;
-  min-height: 500px;
-  max-height: 500px;
+  width: 750px;
+  height: 500px;
+  transition: all .3s ease-in-out;
+}
+.blog__photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
 }
 .blog-stats {
   display: flex;
@@ -25,6 +28,11 @@
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+.blog-stats__data:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .blog-stats__coments {
   display: flex;
@@ -41,6 +49,7 @@
   display: flex;
   align-items: center;
   color: #cbcbcb;
+  transition: all .2s ease-in-out;
 }
 .blog-stats__likes svg {
   width: 20px;
@@ -70,9 +79,13 @@
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.blog__more:hover {
+  font-weight: 200;
 }
 .blog__more::before {
-  content: '➜';
+  content: '➞';
   position: absolute;
   top: 0;
   right: -10px;
@@ -81,6 +94,11 @@
   position: relative;
   display: flex;
   width: 100%;
+  transition: all .2s ease-in-out;
+}
+.blog-form:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .blog-form:after {
   content: '';
@@ -104,7 +122,7 @@
   color: #adadb2;
 }
 .blog__posts {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .blog__heading {
   text-transform: uppercase;
@@ -144,6 +162,11 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  transition: all .2s ease-in-out;
+}
+.blog__post:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .blog__post:last-child {
   margin-bottom: 0;
@@ -167,7 +190,7 @@
   color: #979797;
 }
 .blog__lists {
-  margin-top: 30px;
+  padding-top: 50px;
 }
 .blog-list {
   display: flex;
@@ -178,9 +201,13 @@
   font-family: 'OPenSans', sans-serif;
   font-weight: 400;
   font-size: 14px;
+  cursor: pointer;
+}
+.blog-list:hover {
+  font-weight: 200;
 }
 .blog__tags {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .blog-tags {
   display: flex;
@@ -204,6 +231,12 @@
   color: #979797;
   background-color: #e4e4e4;
   margin-right: 5px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.blog-tags__item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .blog-tags__item:last-child {
   margin-right: 0;
