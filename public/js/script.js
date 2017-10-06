@@ -34,3 +34,15 @@ $(document).ready(function() {
       }
     }
 })
+
+/*tabs slider*/
+$(".blog-pagination a").click(function() {
+  if (!$(this).hasClass("blog-pagination__tab_active")) {
+    var i = $(this).index();
+    $(".blog-pagination a.blog-pagination__tab_active").removeClass("blog-pagination__tab_active");
+    $(this).addClass("blog-pagination__tab_active");
+    $(".blog-pagination__wrapper .blog-pagination__item_active").removeClass("blog-pagination__item_active");
+    $($(".blog-pagination__wrapper").children(".blog-pagination__item")[i]).addClass("blog-pagination__item_active");
+
+  }
+});
