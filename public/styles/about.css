@@ -92,20 +92,21 @@
 }
 .staff__link {
   display: flex;
+  position: relative;
   width: 270px;
   height: 350px;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 .staff__link:nth-child(-n+4) {
   margin-bottom: 50px;
 }
 .staff__link:hover .staff-img {
-  display: none;
+  opacity: 0;
 }
 .staff__link:hover .staff-img__popup {
-  display: flex;
-  cursor: pointer;
-  transition: all 1s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  opacity: 1;
 }
 .staff__link:hover .staff-img__job, .staff__link:hover .staff-img__name {
   opacity: 1;
@@ -113,14 +114,14 @@
 }
 .staff__link:hover .staff-img__info {
   margin-top: 0;
-  transition: all .2s ease-in-out .2s;
 }
 .staff-img {
   width: 100%;
   height: 100%;
 }
 .staff-img__popup {
-  display: none;
+  display: flex;
+  position: absolute;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -128,13 +129,14 @@
   background-color: #FAFAFA;
   padding: 20px;
   transition: all .2s ease-in-out;
+  opacity: 0;
 }
 .staff-img__info {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  transition: all 3s ease-in-out;
+  transition: all .3s ease-in-out .2s;
 }
 .staff-img__name {
   display: flex;
