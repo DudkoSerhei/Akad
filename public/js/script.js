@@ -43,23 +43,13 @@ $(".blog-pagination a").click(function() {
     $(this).addClass("blog-pagination__tab_active");
     $(".blog-pagination__wrapper .blog-pagination__item_active").removeClass("blog-pagination__item_active");
     $($(".blog-pagination__wrapper").children(".blog-pagination__item")[i]).addClass("blog-pagination__item_active");
-
   }
 });
 
 /*swiper slider*/
-var swiper = new Swiper('.staff-item__container', {
+var swiper = new Swiper ('.staff-item__container', {
     effect: 'flip',
     grabCursor: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        },
-    },
-    navigation: {
-      nextEl: '.swiper-pagination-bullet',
-      prevEl: '.sswiper-pagination-bullet-active',
-    },
-    });
+    pagination:'.swiper-pagination',
+    paginationClickable: true,
+});

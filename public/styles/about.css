@@ -38,10 +38,10 @@
   width: 29%;
   padding: 5px;
   transition: all .3s ease-in-out;
+  cursor: pointer;
 }
 .profit-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .profit-item:hover svg {
   fill: #60606d;
@@ -230,23 +230,25 @@
   transform: scale(1.01);
   box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
-.staff-pagination {
+.staff-item__container .swiper-pagination {
   display: flex;
+  position: relative;
   justify-content: space-between;
-  width: 90px;
+  max-width: 90px;
   height: 5px;
   margin-top: 30px;
 }
-.staff-pagination__tab {
+.staff-item__container .swiper-pagination-bullet {
   display: flex;
-  width: 14px;
+  min-width: 14px;
   height: 5px;
   background-color: #60606d;
-  cursor: pointer;
+  border-radius: 0;
+  opacity: 1;
 }
-.staff-pagination__tab_active {
-  width: 30px;
-  background-color: #a5edc7;
+.staff-item__container .swiper-pagination-bullet-active {
+  min-width: 30px;
+  background: #a5edc7;
 }
 .staff-item__clients {
   display: flex;

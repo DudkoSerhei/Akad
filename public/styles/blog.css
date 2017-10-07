@@ -11,6 +11,7 @@
   width: 750px;
   height: 500px;
   transition: all .3s ease-in-out;
+  cursor: pointer;
 }
 .blog__photo:hover {
   transform: scale(1.05);
@@ -167,6 +168,7 @@
 .blog-pagination__post {
   display: flex;
   align-items: center;
+  cursor: pointer;
   margin-bottom: 10px;
   transition: all .2s ease-in-out;
 }
