@@ -103,6 +103,9 @@
   color: #a7a7a7;
   cursor: pointer;
 }
+.advantages-list__unit:hover {
+  text-decoration: underline;
+}
 .advantages-list__unit:last-child {
   margin-bottom: 0;
 }

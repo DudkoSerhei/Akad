@@ -84,6 +84,7 @@
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 .blog__more:hover {
   font-weight: 200;
@@ -93,6 +94,11 @@
   position: absolute;
   top: 0;
   right: -17px;
+  transition: all .2s ease-in-out;
+}
+.blog__more:hover::before {
+  color: #a5edc7;
+  right: -30px;
 }
 .blog-form {
   position: relative;
