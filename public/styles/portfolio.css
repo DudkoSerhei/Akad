@@ -1,9 +1,9 @@
 /*advantages*/
 .portfolio {
-  padding: 150px 0;
+  padding: 141px 0;
 }
 .portfolio__second-title {
-  width: 255px;
+  width: 294px;
   margin: 0 auto;
 }
 .portfolio__text {
@@ -21,15 +21,14 @@
   flex-direction: column;
 }
 .portfolio-choose__second-title {
-  line-height: 45px;
-  width: 150px;
+  line-height: 40px;
 }
 .portfolio-choose__second-title::after {
   display: none;
 }
 .portfolio-choose__nav li {
   list-style-type: none;
-  margin: 20px 0;
+  margin: 22px 0 24px;
 }
 .portfolio-choose__item {
   text-transform: uppercase;
@@ -40,15 +39,15 @@
   transition: all .2s ease-in-out;
 }
 .portfolio-choose__item:hover {
-  margin-left: 0;
+  margin-left: 2px;
   background-color: #7beec7;
-  padding: 0 10px;
+  padding: 2px 20px;
   color: white;
 }
 .portfolio-choose__list .active {
-  margin-left: 0;
+  margin-left: 2px;
   background-color: #7beec7;
-  padding: 0 10px;
+  padding: 2px 20px;
   color: white;
 }
 .portfolio-choose__photos {
@@ -62,6 +61,7 @@
   display: flex;
   width: 260px;
   margin-bottom: 30px;
+  cursor: pointer;
   transition: all .2s ease-in-out;
 }
 .portfolio-choose__link:hover {

@@ -1,6 +1,6 @@
 /*capabilities*/
 .capabilities {
-  padding: 150px 0;
+  padding: 145px 0 132px;
 }
 .capabilities__second-title {
   width: 210px;
@@ -14,9 +14,10 @@
 }
 .capabilities__text {
   display: flex;
-  letter-spacing: 0.4px;
-  line-height: 20px;
-  margin-bottom: 50px;
+  letter-spacing: -0.1px;
+  line-height: 27px;
+  margin-bottom: 42px;
+  width: 98%;
 }
 .capabilities__list {
   display: flex;
@@ -24,7 +25,8 @@
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  height: 130px;
+  height: 148px;
+  width: 96%;
 }
 .capabilities__item {
   position: relative;
@@ -68,7 +70,7 @@
 .capabilities-advantage__icon {
   display: flex;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   z-index: 0;
 }
 .capabilities-advantage__icon svg {
@@ -86,17 +88,19 @@
   z-index: -1;
 }
 .capabilities-advantage__third-title {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 .capabilities-advantage__text {
   display: flex;
   text-align: center;
-  width: 78%;
+  width: 87%;
+  letter-spacing: -0.5px;
+  line-height: 30px;
 }
 
 /*price*/
 .price {
-  padding-bottom: 150px;
+  padding-bottom: 166px;
 }
 .price__second-title {
   width: 240px;
@@ -107,9 +111,9 @@
 }
 .price-item {
   position: relative;
-  width: 31%;
+  width: 31.6%;
   border-top: 6px solid #a5edc7;
-  padding: 30px;
+  padding: 24px 32px;
   transition: all .5s ease-in-out;
   cursor: pointer;
 }
@@ -132,15 +136,16 @@
   text-transform: uppercase;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .price-item__cost {
-  padding: 10px 20px;
+  padding: 6px 20px;
   text-transform: uppercase;
   background-color: #a5edc7;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
+  letter-spacing: 0.1px;
   width: 165px;
   transition: all .2s ease-in-out;
 }
@@ -149,12 +154,13 @@
   box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .price-item__tabs {
-  margin: 50px 0;
+  margin: 48px 0 50px;
 }
 .price-item__list {
   position: relative;
   list-style-type: none;
-  margin: 0 0 10px 20px;
+  letter-spacing: -0.3px;
+  margin: 0 0 19px 20px;
 }
 .price-item__list:hover {
   font-weight: 400;
@@ -173,4 +179,5 @@
 .price-item__btn {
   color: #fff;
   background-color: #a5edc7;
+  max-width: 135px;
 }

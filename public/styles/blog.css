@@ -19,11 +19,11 @@
 }
 .blog-stats {
   display: flex;
-  margin: 30px 0 20px;
+  margin: 30px 0 17px;
   align-items: center;
 }
 .blog-stats__data {
-  padding: 10px 23px 10px 15px;
+  padding: 7px 26px 5px 15px;
   background-color: #a5edc7;
   color: #fff;
   font-size: 14px;
@@ -38,7 +38,8 @@
 .blog-stats__coments {
   display: flex;
   align-items: center;
-  margin: 0 20px 0 15px;
+  margin: 0 9px 0 15px;
+  font-size: 14px;
   color: #cbcbcb;
 }
 .blog-stats__coments svg {
@@ -49,6 +50,7 @@
 .blog-stats__likes {
   display: flex;
   align-items: center;
+  font-size: 14px;
   color: #cbcbcb;
   transition: all .2s ease-in-out;
 }
@@ -65,19 +67,20 @@
   fill: #cf6a6a;
 }
 .blog__third-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .blog__text {
   color: #a4a4a4;
-  margin-bottom: 20px;
-  line-height: 20px;
-  letter-spacing: 0.4px;
+  margin-bottom: 23px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
 }
 .blog__more {
   position: relative;
   width: 150px;
   font-family: 'OpenSans', sans-serif;
   font-weight: bold;
+  letter-spacing: 0.5px;
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
@@ -89,7 +92,7 @@
   content: '➞';
   position: absolute;
   top: 0;
-  right: -10px;
+  right: -17px;
 }
 .blog-form {
   position: relative;
@@ -123,21 +126,21 @@
   color: #adadb2;
 }
 .blog__posts {
-  padding-top: 50px;
+  padding-top: 47px;
 }
 .blog__heading {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 .blog-pagination {
   display: flex;
   position: relative;
   justify-content: space-between;
-  padding: 0 6px 22px 19px;
+  padding: 0 6px 17px 19px;
   border-bottom: 2px solid #e5e5e5;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 .blog-pagination__tab {
   position: relative;
@@ -155,7 +158,7 @@
   position: absolute;
   width: 98px;
   height: 2px;
-  top: 37px;
+  top: 32px;
   left: -19px;
   background-color: #a5edc7;
 }
@@ -184,10 +187,14 @@
   height: 80px;
 }
 .blog-pagination__description {
-  margin-left: 15px;
+  margin-left: 17px;
 }
 .blog-pagination__description .blog-pagination__heading {
   margin-bottom: 0;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
 }
 .blog-pagination__data {
   font-family: 'OPenSans', sans-serif;
@@ -198,10 +205,13 @@
 .blog__lists {
   padding-top: 50px;
 }
+.blog__lists .blog__heading {
+  margin-bottom: 5px;
+}
 .blog-list {
   display: flex;
   justify-content: space-between;
-  padding: 20px 15px;
+  padding: 18px 16px 17px;
   width: 100%;
   border-bottom: 1px solid #bdbdbd;
   font-family: 'OPenSans', sans-serif;
@@ -214,7 +224,10 @@
   border-color: #a5edc7;
 }
 .blog__tags {
-  padding-top: 50px;
+  padding-top: 44px;
+}
+.blog__tags .blog__heading {
+  margin-bottom: 27px;
 }
 .blog-tags {
   display: flex;
@@ -222,7 +235,7 @@
 }
 .blog-tags__row {
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 .blog-tags__row:last-child {
   margin-bottom: 0;
@@ -231,7 +244,7 @@
   display: flex;
   justify-content: center;
   min-width: 67px;
-  padding: 10px 19px;
+  padding: 8px 17px;
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;

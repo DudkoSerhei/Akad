@@ -18,13 +18,13 @@ body {
   color: #60606e;
 }
 .main {
-  max-width: 1280px;
+  max-width: 1144px;
   margin: 0 auto;
 }
 .content {
   display: flex;
   flex-direction: column;
-  width: 59%;
+  width: 65.6%;
 }
 .content__wrapper {
   display: flex;
@@ -34,7 +34,7 @@ body {
 .aside {
   display: flex;
   flex-direction: column;
-  width: 22%;
+  width: 23.2%;
 }
 .btn {
   display: flex;
@@ -62,7 +62,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   z-index: 0;
-  margin: 0 auto 30px;
+  margin: 0 auto 17px;
 }
 .second-title::after {
   content: "";
@@ -85,14 +85,16 @@ body {
 }
 .signature {
   display: flex;
-  width: 55%;
-  margin: 0 auto 100px;
+  width: 65%;
+  margin: 0 auto 95px;
   text-align: center;
+  letter-spacing: -0.2px;
+  line-height: 23px;
 }
 .text {
   font-family: 'OpenSans', sans-serif;
   font-weight: 200;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /*header*/
@@ -101,7 +103,10 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 198px;
+}
+.header_home {
+  margin-bottom: 194px;
 }
 .header__logo {
   display: flex;
@@ -158,13 +163,14 @@ body {
 
 /*banner*/
 .banner {
-  padding: 43px 80px 0;
+  padding: 40px 80px 0;
   background: url('../images/img/banner-bg.jpg') no-repeat 0 0;
   background-size: cover;
   height: 500px;
   width: 100%;
 }
 .banner_home {
+  padding: 35px 80px 0;
   background: url('../images/img/home-background.jpg') no-repeat 0 0;
   background-size: cover;
   height: 100vh;
@@ -173,25 +179,27 @@ body {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 35px;
   font-weight: bold;
 }
 .banner__title_home {
   position: relative;
-  padding: 22px 36px;
+  padding: 11px 36px;
   border: 10px solid #60606e;
   width: 557px;
+  font-size: 48px;
   margin: 0 auto;
 }
 .banner__title_home::after {
   content: "WE'RE";
   position: absolute;
-  top: -52px;
-  left: 218px;
+  top: -40px;
+  left: 219px;
   font-size: 18px;
   font-weight: bold;
-  padding: 10px 20px;
-  width: 65px;
+  padding: 4px 19px 4px;
+  width: 59px;
+  letter-spacing: -0.6px;
   background-color: #a5edc7;
 }
 .banner__third-title {
@@ -200,8 +208,9 @@ body {
   text-transform: uppercase;
   width: 110px;
   font-size: 14px;
+  letter-spacing: 0.5px;
   font-weight: bold;
-  margin: 20px auto 0;
+  margin: 18px auto 0;
   cursor: pointer;
 }
 .banner__third-title_ligh {
@@ -229,7 +238,7 @@ body {
 .reply__second-title {
   color: #fff;
   line-height: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
 .reply__btn {
   color: #a5edc7;
@@ -250,17 +259,20 @@ body {
 .reply-form__title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  line-height: 32px;
 }
 .reply-form__text {
   font-size: 16px;
   color: #989898;
+  letter-spacing: 0.2px;
+  line-height: 22px;
 }
 .reply-form__email {
   display: flex;
   position: absolute;
   bottom: 18px;
-  left: 26px;
+  left: 18px;
   height: 50px;
 }
 .reply-form__input {
@@ -297,8 +309,11 @@ body {
 }
 .footer__nav .nav__item {
   position: relative;
+  text-transform: uppercase;
   text-decoration: none;
   margin-right: 40px;
+  letter-spacing: -0.7px;
+  font-size: 15px;
   font-weight: 100;
   font-family: 'OpenSans', sans-serif;
   color: #989898;
@@ -339,7 +354,8 @@ body {
   font-family: 'OpenSans', sans-serif;
   text-transform: uppercase;
   color: #969696;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  font-size: 12px;
 }
 .footer__icons {
   display: flex;
@@ -347,7 +363,7 @@ body {
 }
 .footer__icon {
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 13px;
 }
 .footer__icon:hover svg{
   fill: #a5edc7;
