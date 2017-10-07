@@ -152,7 +152,7 @@
 .blog-pagination__tab_active::after {
   content: "";
   position: absolute;
-  width: 97px;
+  width: 98px;
   height: 2px;
   top: 37px;
   left: -19px;

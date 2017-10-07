@@ -46,3 +46,20 @@ $(".blog-pagination a").click(function() {
 
   }
 });
+
+/*swiper slider*/
+var swiper = new Swiper('.staff-item__container', {
+    effect: 'flip',
+    grabCursor: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+    },
+    navigation: {
+      nextEl: '.swiper-pagination-bullet',
+      prevEl: '.sswiper-pagination-bullet-active',
+    },
+    });
