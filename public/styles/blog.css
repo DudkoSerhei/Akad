@@ -152,7 +152,7 @@
 .blog-pagination__tab_active::after {
   content: "";
   position: absolute;
-  width: 86px;
+  width: 97px;
   height: 2px;
   top: 37px;
   left: -19px;
@@ -208,7 +208,8 @@
   cursor: pointer;
 }
 .blog-list:hover {
-  font-weight: 200;
+  font-weight: bold;
+  border-color: #a5edc7;
 }
 .blog__tags {
   padding-top: 50px;
@@ -239,6 +240,7 @@
   transition: all .2s ease-in-out;
 }
 .blog-tags__item:hover {
+  background-color: #f2f2f2;
   transform: scale(1.01);
   box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
