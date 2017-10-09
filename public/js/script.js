@@ -53,9 +53,11 @@ $(".header__menu").click(function() {
   })
 
 /*swiper slider*/
-var swiper = new Swiper('.staff-item__container', {
-    effect: 'flip',
-    grabCursor: true,
-    pagination:'.swiper-pagination',
-    paginationClickable: true,
-});
+if ($('.staff-item__container').length > 0) {
+  var swiper = new Swiper('.staff-item__container', {
+      effect: 'flip',
+      grabCursor: true,
+      pagination:'.swiper-pagination',
+      paginationClickable: true,
+  });
+}
