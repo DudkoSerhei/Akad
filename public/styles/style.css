@@ -387,6 +387,9 @@ body {
   .banner_home {
     padding: 35px 50px 0;
   }
+  .banner {
+    padding: 40px 50px 0;
+  }
 }
 @media(max-width: 1023px) {
   .main {
@@ -447,6 +450,12 @@ body {
   .header_home {
     margin-bottom: 100px;
   }
+  .banner {
+    padding: 40px 0 0;
+  }
+  .banner_home {
+    padding: 40px 0 0;
+  }
   .banner__title_home {
     width: 360px;
     font-size: 32px;
@@ -497,7 +506,7 @@ body {
 }
 @media(max-width: 424px) {
   .main {
-    max-width: 300px;
+    max-width: 290px;
   }
   .banner_home {
     padding: 30px 15px 0;

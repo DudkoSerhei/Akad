@@ -181,3 +181,17 @@
   background-color: #a5edc7;
   max-width: 135px;
 }
+
+/*media*/
+@media(max-width: 1239px) {
+
+}
+@media(max-width: 1023px) {
+
+}
+@media(max-width: 767px) {
+
+}
+@media(max-width: 424px) {
+
+}

@@ -129,3 +129,17 @@
   width: 48.8%;
   height: 840px;
 }
+
+/*media*/
+@media(max-width: 1239px) {
+
+}
+@media(max-width: 1023px) {
+
+}
+@media(max-width: 767px) {
+
+}
+@media(max-width: 424px) {
+
+}

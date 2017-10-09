@@ -21,6 +21,7 @@
   display: flex;
   margin: 30px 0 17px;
   align-items: center;
+  cursor: pointer;
 }
 .blog-stats__data {
   padding: 7px 26px 5px 15px;
