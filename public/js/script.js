@@ -46,6 +46,12 @@ $(".blog-pagination a").click(function() {
   }
 });
 
+/*menu*/
+$(".header__menu").click(function() {
+  $(".header__menu").toggleClass('header__menu_open');
+    $('.header__nav').toggleClass('header__nav_open');
+  })
+
 /*swiper slider*/
 var swiper = new Swiper('.staff-item__container', {
     effect: 'flip',
