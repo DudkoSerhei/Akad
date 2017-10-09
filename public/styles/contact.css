@@ -1,8 +1,10 @@
 /*contacts*/
 .contacts {
+  margin: 150px 0;
+}
+.contacts .main {
   display: flex;
   justify-content: space-between;
-  margin: 150px 0;
 }
 .contact {
   display: flex;
@@ -133,11 +135,12 @@
 /*media*/
 @media(max-width: 1023px) {
   .contacts {
-    display: flex;
+    margin: 60px 0;
+  }
+  .contacts .main {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin: 60px 0;
   }
   .contact {
     width: 100%;
@@ -149,6 +152,9 @@
   }
 }
 @media(max-width: 767px) {
+  .contacts .main {
+    max-width: 90%;
+  }
   .contact-form__header {
     flex-direction: column;
     justify-content: center;
@@ -161,7 +167,4 @@
   .contact-form__input:last-child {
     margin-bottom: 0;
   }
-}
-@media(max-width: 424px) {
-
 }
