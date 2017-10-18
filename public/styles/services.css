@@ -35,9 +35,6 @@
   margin: 0 0 10px 20px;
   width: 50%;
 }
-.capabilities__item:hover {
-  font-weight: 400;
-}
 .capabilities__item::after {
   content: "";
   position: absolute;
@@ -60,12 +57,14 @@
   align-items: center;
   cursor: pointer;
   width: 22%;
-  transition: all .2s ease-in-out;
+  transition: all .4s ease-in-out;
   padding-bottom: 5px;
 }
 .capabilities-advantage__item:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  transform: scale3d(0.8, 0.85, 0.95);
+}
+.capabilities-advantage__item:hover .capabilities-advantage__icon::after {
+  left: 5px;
 }
 .capabilities-advantage__icon {
   display: flex;
@@ -74,7 +73,7 @@
   z-index: 0;
 }
 .capabilities-advantage__icon svg {
-  width: 55px;
+  width: 50px;
   height: 55px;
 }
 .capabilities-advantage__icon::after {
@@ -86,6 +85,7 @@
   left: -6px;
   bottom: 11px;
   z-index: -1;
+  transition: all 0.3s ease-in-out;
 }
 .capabilities-advantage__third-title {
   margin-bottom: 8px;
@@ -148,10 +148,6 @@
   letter-spacing: 0.1px;
   width: 165px;
   transition: all .2s ease-in-out;
-}
-.price-item__cost:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .price-item__tabs {
   margin: 48px 0 50px;

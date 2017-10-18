@@ -13,10 +13,6 @@
   transition: all .3s ease-in-out;
   cursor: pointer;
 }
-.blog__photo:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0,0,0,.2);
-}
 .blog-stats {
   display: flex;
   margin: 30px 0 17px;
@@ -32,21 +28,26 @@
   text-transform: uppercase;
   transition: all .2s ease-in-out;
 }
-.blog-stats__data:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0 10px rgba(0,0,0,.2);
-}
 .blog-stats__coments {
   display: flex;
   align-items: center;
   margin: 0 9px 0 15px;
   font-size: 14px;
   color: #cbcbcb;
+  transition: all .2s ease-in-out;
 }
 .blog-stats__coments svg {
+  fill: #cbcbcb;
   width: 20px;
   height: 20px;
   margin: 3px 10px 0 0;
+  transition: all .2s ease-in-out;
+}
+.blog-stats__coments:hover {
+  color: #89c4a4;
+}
+.blog-stats__coments:hover svg, .blog-stats__coments:active svg {
+  fill: #89c4a4;
 }
 .blog-stats__likes {
   display: flex;
@@ -60,11 +61,18 @@
   height: 20px;
   margin: 1px 10px 0 0;
   fill: #cbcbcb;
+  transition: all .2s ease-in-out;
 }
-.blog-stats__likes svg:hover, svg:active {
+.blog-stats__likes:hover {
+  color: #cf6a6a;
+}
+.blog-stats__likes:hover svg, .blog-stats__likes:active svg {
   fill: #cf6a6a;
 }
-.blog-stats__likes .active svg {
+.blog-stats__likes_active  {
+  color: #cf6a6a;
+}
+.blog-stats__likes_active svg {
   fill: #cf6a6a;
 }
 .blog__third-title {
@@ -87,9 +95,6 @@
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
-.blog__more:hover {
-  font-weight: 200;
-}
 .blog__more::before {
   content: '➞';
   position: absolute;
@@ -106,10 +111,6 @@
   display: flex;
   width: 100%;
   transition: all .2s ease-in-out;
-}
-.blog-form:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .blog-form:after {
   content: '';
@@ -183,7 +184,6 @@
   transition: all .2s ease-in-out;
 }
 .blog-pagination__post:hover {
-  transform: scale(1.01);
   box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .blog-pagination__post:last-child {
@@ -225,6 +225,7 @@
   font-weight: 400;
   font-size: 14px;
   cursor: pointer;
+  transition: all .4s ease-in-out;
 }
 .blog-list:hover {
   font-weight: bold;
@@ -263,8 +264,6 @@
 }
 .blog-tags__item:hover {
   background-color: #f2f2f2;
-  transform: scale(1.01);
-  box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .blog-tags__item:last-child {
   margin-right: 0;
