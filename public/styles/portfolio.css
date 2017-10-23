@@ -1,8 +1,8 @@
 /*advantages*/
-.portfolio {
+.portfolio-wrapper {
   padding: 141px 0;
 }
-.portfolio__second-title {
+.portfolio__title {
   width: 253px;
   margin: 0 auto;
 }
@@ -20,13 +20,13 @@
   display: flex;
   flex-direction: column;
 }
-.portfolio-choose__second-title {
+.portfolio-choose__title {
   line-height: 40px;
 }
-.portfolio-choose__second-title::after {
+.portfolio-choose__title::after {
   display: none;
 }
-.portfolio-choose__nav li {
+.portfolio-choose__list {
   list-style-type: none;
   margin: 22px 0 24px;
 }
