@@ -1,35 +1,35 @@
 /*about-description*/
-.about-description {
+.about-wrapper {
   display: flex;
   justify-content: space-between;
   padding: 145px 0;
 }
-.about-description .second-title:hover::after {
+.about .second-title:hover::after {
   left: 25%;
 }
-.about-description__item {
+.about__item {
   width: 48.5%;
 }
-.about-description__third-title {
+.about__third-title {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
   margin: 18px 0;
 }
-.about-description__text {
+.about__text {
   line-height: 30px;
   letter-spacing: -0.2px;
 }
 
 /*profit*/
-.profit {
+.profit-wrapper {
   display: flex;
   flex-direction: column;
 }
-.profit__second-title {
+.profit__title {
   width: 250px;
 }
-.profit__wrapper {
+.profit__content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -73,7 +73,7 @@
 .profit-item:first-child svg, .profit-item:last-child svg {
   width: 24px;
 }
-.profit-item__third-title {
+.profit-item__title {
   margin-left: 20px;
 }
 .profit__text {
@@ -82,10 +82,10 @@
 }
 
 /*staf*/
-.staff {
+.staff-wrapper {
   padding: 122px 0 150px;
 }
-.staff__second-title {
+.staff__title {
   width: 282px;
 }
 .staff__photos {
@@ -131,7 +131,6 @@
   height: 100%;
   width: 100%;
   background-color: #FAFAFA;
-  padding: 20px;
   transition: all .3s ease-in-out;
   opacity: 0;
 }

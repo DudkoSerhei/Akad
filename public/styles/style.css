@@ -229,15 +229,19 @@ body {
   letter-spacing: -0.6px;
   background-color: #a5edc7;
 }
-.introduction__third-title {
+.introduction__nav {
   display: flex;
   justify-content: center;
-  text-transform: uppercase;
   width: 110px;
+  margin: 18px auto 0;
+}
+.introduction__third-title {
+  text-transform: uppercase;
+  text-decoration: none;
   font-size: 14px;
+  color: inherit;
   letter-spacing: 0.5px;
   font-weight: bold;
-  margin: 18px auto 0;
   cursor: pointer;
 }
 .introduction__third-title_ligh {
@@ -262,7 +266,7 @@ body {
 .reply__heading {
   width: 45%;
 }
-.reply__second-title {
+.reply__title {
   color: #fff;
   line-height: 40px;
   margin-bottom: 21px;
@@ -272,7 +276,8 @@ body {
   background-color: #fff;
 }
 .reply-form {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 555px;
   height: 230px;
   padding: 18px 26px;
@@ -293,9 +298,7 @@ body {
 }
 .reply-form__email {
   display: flex;
-  position: absolute;
-  bottom: 18px;
-  left: 18px;
+  margin-top: auto;
   height: 50px;
 }
 .reply-form__input {
