@@ -314,7 +314,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
-.reply-form__input:focus {
+.reply-form__input:focus, .reply-form__input:hover {
   border-color: #89c4a4;
   border-right: 1px solid #89c4a4;
 }
