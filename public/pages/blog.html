@@ -151,12 +151,13 @@
               posts
             </h4>
             <div class="blog-tabs">
-              <a class="blog__tab blog__tab_active">Latest</a>
-              <a class="blog__tab">Popular</a>
-              <a class="blog__tab">Comments</a>
-            </div>
-            <div class="blog-posts-wrapper">
-              <div class="blog-post blog-post_active">
+              <input class="blog__input" id="tab1" type="radio" name="tabs" checked>
+              <label class="blog__tab" for="tab1" title="Latest">Latest</label>
+              <input class="blog__input" id="tab2" type="radio" name="tabs">
+              <label class="blog__tab" for="tab2" title="Popular">Popular</label>
+              <input class="blog__input" id="tab3" type="radio" name="tabs">
+              <label class="blog__tab" for="tab3" title="Comments">Comments</label>
+              <section class="blog-post" id="content-tab1">
                 <div class="blog-posts__item">
                   <img src="../images/img/post-1.jpg" alt="post-1"
                   class="blog-posts__img">
@@ -187,8 +188,8 @@
                     <span class="blog-posts__data">5th oct 2011</span>
                   </div>
                 </div>
-              </div>
-              <div class="blog-post">
+              </section>
+              <section class="blog-post" id="content-tab2">
                 <div class="blog-posts__item">
                   <img src="../images/img/post-4.jpg" alt="post-4"
                   class="blog-posts__img">
@@ -219,8 +220,8 @@
                     <span class="blog-posts__data">19th aug 1995</span>
                   </div>
                 </div>
-              </div>
-              <div class="blog-post">
+              </section>
+              <section class="blog-post" id="content-tab3">
                 <div class="blog-posts__item">
                   <img src="../images/img/post-7.jpg" alt="post-7"
                   class="blog-posts__img">
@@ -251,7 +252,7 @@
                     <span class="blog-posts__data">25th dec 2015</span>
                   </div>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
           <div class="blog__lists">

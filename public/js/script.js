@@ -35,17 +35,6 @@ $(document).ready(function() {
     }
 })
 
-/*tabs slider*/
-$(".blog-tabs a").click(function() {
-  if (!$(this).hasClass("blog__tab_active")) {
-    var i = $(this).index();
-    $(".blog-tabs a.blog__tab_active").removeClass("blog__tab_active");
-    $(this).addClass("blog__tab_active");
-    $(".blog-posts-wrapper .blog-post_active").removeClass("blog-post_active");
-    $($(".blog-posts-wrapper").children(".blog-post")[i]).addClass("blog-post_active");
-  }
-});
-
 /*menu*/
 $(".header__menu").click(function() {
   $(".header__menu").toggleClass('header__menu_open');
