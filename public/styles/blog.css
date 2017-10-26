@@ -195,7 +195,7 @@
   height: 80px;
 }
 .blog-posts__description {
-  margin-left: 17px;
+  margin: 0 7px 0 17px;
 }
 .blog-posts__description .blog-posts__heading {
   margin-bottom: 0;

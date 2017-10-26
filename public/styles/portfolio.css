@@ -14,48 +14,63 @@
 }
 .portfolio-choose {
   display: flex;
-  justify-content: space-between;
-}
-.portfolio-choose__category {
-  display: flex;
   flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  height: 900px;
 }
 .portfolio-choose__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
   line-height: 40px;
+  max-width: 170px;
+  margin-bottom: 22px;
 }
-.portfolio-choose__title::after {
+.portfolio-choose > input {
   display: none;
+  position: absolute;
 }
-.portfolio-choose__list {
-  list-style-type: none;
-  margin: 22px 0 24px;
-}
-.portfolio-choose__item {
+.portfolio-choose__tab {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
   margin-left: 20px;
+  padding: 2px 20px;
+  margin-bottom: 15px;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
-.portfolio-choose__item:hover {
+.portfolio-choose__tab:hover {
   margin-left: 2px;
   background-color: #7beec7;
-  padding: 2px 20px;
   color: white;
 }
-.portfolio-choose__list .active {
+.portfolio-choose > input:checked + label {
   margin-left: 2px;
   background-color: #7beec7;
-  padding: 2px 20px;
   color: white;
 }
 .portfolio-choose__photos {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-left: auto;
+  position: relative;
   height: 900px;
   width: 845px;
+}
+.portfolio-choose__section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .4s ease-in-out;
 }
 .portfolio-choose__link {
   display: flex;
@@ -78,7 +93,15 @@
   width: 100%;
   height: 100%;
 }
-
+#tab-1:checked ~ .portfolio-choose__photos #content-tab-1,
+#tab-2:checked ~ .portfolio-choose__photos #content-tab-2,
+#tab-3:checked ~ .portfolio-choose__photos #content-tab-3,
+#tab-4:checked ~ .portfolio-choose__photos #content-tab-4,
+#tab-5:checked ~ .portfolio-choose__photos #content-tab-5,
+#tab-6:checked ~ .portfolio-choose__photos #content-tab-6 {
+  opacity: 1;
+  z-index: 1;
+}
 /*media*/
 @media(max-width: 1239px) {
   .portfolio-choose__photos {
