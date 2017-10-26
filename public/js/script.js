@@ -38,7 +38,7 @@ $(document).ready(function() {
 /*menu*/
 $(".header__menu").click(function() {
   $(".header__menu").toggleClass('header__menu_open');
-    $('.header__nav').toggleClass('header__nav_open');
+    $('.nav').toggleClass('nav_open');
   })
 
 /*swiper slider*/
