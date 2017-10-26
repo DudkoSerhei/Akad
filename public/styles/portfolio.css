@@ -183,12 +183,13 @@
 }
 @media(max-width: 424px) {
   .portfolio {
-    height: 2510px;
+    height: 2900px;
   }
   .portfolio-choose__photos {
-    height: 2100px;
+    height: 2450px;
   }
   .portfolio-choose__link {
     width: 75%;
+    max-width: 228px;
   }
 }
