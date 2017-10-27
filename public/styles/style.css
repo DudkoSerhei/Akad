@@ -632,7 +632,7 @@ body {
     font-size: 22px;
   }
   .reply-form {
-    height: 345px;
+    height: 370px;
   }
   .reply-form__email {
     flex-direction: column;

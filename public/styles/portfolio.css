@@ -184,6 +184,7 @@
 @media(max-width: 424px) {
   .portfolio {
     height: 2900px;
+    padding-top: 50px;
   }
   .portfolio-choose__photos {
     height: 2450px;
