@@ -321,9 +321,21 @@
     padding-top: 30px;
     width: 100%;
   }
+  .blog__tab::after {
+    width: 145px;
+  }
+  .blog-tabs {
+    overflow: hidden;
+  }
+  .blog__tab::after:last-child {
+    width: 98px;
+  }
 }
 @media(max-width: 424px) {
   .blog {
     margin-bottom: 40px;
+  }
+  .blog-stats__data {
+    font-size: 10px;
   }
 }
