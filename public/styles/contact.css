@@ -133,6 +133,8 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
   }
   .contact {
     width: 100%;
@@ -145,7 +147,7 @@
 }
 @media(max-width: 767px) {
   .contact-wrapper {
-    max-width: 90%;
+    width: 100%;
   }
   .contact-form__header {
     flex-direction: column;
@@ -158,5 +160,14 @@
   }
   .contact-form__input:last-child {
     margin-bottom: 0;
+  }
+}
+@media(max-width: 424px) {
+  .contact-form__btn {
+    margin: 0 auto;
+  }
+  .contact__title {
+    margin: 0 auto 18px;
+    width: 142px;
   }
 }
