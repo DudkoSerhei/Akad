@@ -1,5 +1,5 @@
 /*capabilities*/
-.capabilities-wrapper {
+.capabilities {
   padding: 145px 0 132px;
 }
 .capabilities__title {
@@ -99,7 +99,7 @@
 }
 
 /*price*/
-.price-wrapper {
+.price {
   padding-bottom: 166px;
 }
 .price__title {
@@ -192,22 +192,26 @@
   .capabilities {
      padding: 50px 0;
  }
- .capabilities__wrapper {
+ .capabilities__description {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
   .capabilities__content {
     width: 100%;
+    margin-top: 30px;
   }
   .capabilities__text {
     width: 93%;
     margin: 0 auto 30px;
   }
   .capabilities__list {
-    width: 55%;
+    width: 75%;
     margin: 0 auto 30px;
+  }
+  .capabilities__item {
+    width: 58%;
   }
   .capabilities__img {
     width: 90%;
@@ -231,26 +235,28 @@
 }
 @media(max-width: 767px) {
   .capabilities__text {
-    width: 100%;
-    text-align: justify;
+    width: 95%;
   }
   .capabilities__list {
     width: 100%;
-    height: 100%;
-    margin: 0 auto 30px;
-    align-items: center;
+    margin: 0;
+  }
+  .capabilities__item {
+    width: 196px;
+    margin: 0 auto;
   }
   .capabilities__img {
     width: 100%;
     height: 350px;
   }
   .capabilities-advantage {
-    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
   .capabilities-advantage__item {
-    width: 100%;
+    width: 50%;
     margin-bottom: 15px;
   }
   .capabilities-advantage__item:last-child {
@@ -263,8 +269,9 @@
     padding-bottom: 60px;
   }
   .price-item {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 60%;
+    min-width: 380px;
+    margin: 0 auto 20px;
   }
   .price-item:last-child {
     margin-bottom: 0;
@@ -278,12 +285,20 @@
 }
 @media(max-width: 424px) {
   .capabilities__list {
-    align-items: flex-start;
+    height: 100%;
+    margin: 0 auto;
+    width: 64%;
   }
   .capabilities__item {
     width: 100%;
   }
   .capabilities__img {
     height: 250px;
+  }
+  .capabilities-advantage__item {
+    width: 85%;
+  }
+  .price-item {
+    min-width: 90%;
   }
 }
