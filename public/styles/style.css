@@ -43,6 +43,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   border: 0;
+  border-radius: 0;
   outline: 0;
   cursor: pointer;
   transition: all .2s ease-in-out;
@@ -244,7 +245,7 @@ body {
   position: relative;
   padding: 11px 36px;
   border: 10px solid #60606e;
-  width: 557px;
+  width: 560px;
   font-size: 48px;
   margin: 0 auto;
 }
@@ -632,6 +633,7 @@ body {
   }
   .introduction-wrapper {
     max-width: 90%;
+    margin: 0 auto;
   }
   .introduction_home {
     height: 1175px;
