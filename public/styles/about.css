@@ -27,7 +27,7 @@
   flex-direction: column;
 }
 .profit__title {
-  width: 255px;
+  width: 260px;
 }
 .profit__content {
   display: flex;
@@ -86,7 +86,7 @@
   padding: 122px 0 150px;
 }
 .staff__title {
-  width: 285px;
+  width: 290px;
 }
 .staff__photos {
   display: flex;
