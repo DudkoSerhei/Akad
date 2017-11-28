@@ -407,7 +407,7 @@ body {
     width: 180px;
     height: 1020px;
     padding-top: 40px;
-    background-color: #FAFAFA;
+    background-color: #fff;
     border-bottom: 1px solid #BFBFBF;
     border-right: 1px solid #BFBFBF;
     transition: all .3s ease-in-out;
@@ -418,7 +418,7 @@ body {
     padding: 5px 0 8px 40px;
     border-bottom: 1px solid #BFBFBF;
   }
-  .nav__menu .nav__list:after {
+  .nav__menu .nav__active:after {
     content: "";
     position: absolute;
     bottom: 4px;
